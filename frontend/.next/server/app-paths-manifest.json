@@ -1,0 +1,7 @@
+{
+  "/page": "app/page.js",
+  "/colleges/page": "app/colleges/page.js",
+  "/compare/page": "app/compare/page.js",
+  "/colleges/[id]/page": "app/colleges/[id]/page.js",
+  "/auth/page": "app/auth/page.js"
+}
