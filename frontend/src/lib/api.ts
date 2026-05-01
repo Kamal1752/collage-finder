@@ -1,13 +1,5 @@
 import axios from 'axios';
 
-const API = axios.create({ baseURL: 'http://localhost:5000/api' });
-
-API.interceptors.request.use((config) => {
-  if (typeof window !== 'undefined') {
-    const token = localStorage.getItem('token');
-    if (token) config.headers.Authorization = `Bearer ${token}`;
-  }
-  return config;
-});
+const API = axios.create({ baseURL: 'https://collage-finder-production.up.railway.app/api' });
 
 export default API;
